@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width" name="viewport">
 
-    <title>Muhammad Osama</title>
+    <title>{{ page.title }} | Muhammad Osama</title>
     <link href="http://gmpg.org/xfn/11" rel="profile">
     <link href="/assets/css/style.css" media='all' rel='stylesheet' type='text/css'>
     <link>
@@ -22,7 +21,7 @@ a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .port
     </style>
 </head>
 
-<body class="home page page-id-1329 page-template page-template-homepage-php">
+<body class="page page-id-1268 page-template page-template-full-width-php">
     <div id="page">
         <header class="site-header" id="masthead">
             <div class="header-wrap">
@@ -30,9 +29,9 @@ a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .port
                     <div class="navigation-wrap clearfix">
                         <div class="hgroup">
                             <h1 class="site-title"><a href="index.html" rel=
-                            "home" title="Muhammad Osama">Muhammad Osama</a></h1>
+                            "home" title="Muhammad Osama">{{ page.title }}</a></h1>
 
-                            <h2 class="site-description">I am a Computer Science student at the University of Toronto.</h2>
+                            <h2 class="site-description">{{ page.description }}</h2>
                         </div>
 
                         <div class="navigation-wrap-inside clearfix">
@@ -74,10 +73,7 @@ a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .port
                     </div>
 
                     <div class="hero-title animated fadeIn">
-                        <h2>Hi, I'm Muhammad Osama</h2>
-
-                        <h3>...a Computer Science student at the University of Toronto.</h3>
-                        <a class="cta-red animated fadeIn" href="portfolio/index.html">About Me</a>
+                        <h2>{{ page.title }}</h2>
                     </div>
                 </div>
             </div>
@@ -86,60 +82,19 @@ a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .port
         <div class="inside-page animated fadeIn">
             <div class="site-main clearfix" id="main">
                 <div class="content-area" id="primary">
-                    <div class="site-content clearfix" id="content">
-                        <div class="featured-content-section show-nav">
-                            <div class="blog-section clearfix">
-                                <div class="blog-section-inside clearfix">
-                                    <div class="blog-left">
-                                        <h2><a href=
-                                        "/projects/"
-                                        rel="bookmark">I am always striving to learn more about development.</a></h2>
-
-                                        <div class="blog-left-excerpt">
-                                            <p>I am curently studying Computer Science at the University of Toronto, taking an interest in Artificial Intelligence. I share many side projects that derive from this knowledge on Github.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="blog-right">
-                                        <ul>
-                                            <li>
-                                                <h2><a href=
-                                                "/projects/#web"
-                                                rel="bookmark">Web Development</a></h2>
-
-                                                <div class="blog-right-date">
-                                                    I am very proficient with WordPress and a fan of responsive design. My experience ranges from business and educational websites to e-commerce solutions.
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <h2><a href=
-                                                "/projects/#android"
-                                                rel="bookmark">Android Applications</a></h2>
-
-                                                <div class="blog-right-date">
-                                                    As an experienced Android developer, I strive to make my mobile applications both efficient and visually pleasing. I am working on some exciting projects.
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <h2>Game Development</h2>
-
-                                                <div class="blog-right-date">
-                                                    I am learning the basics of game development in Unreal Engine 4. 
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    <div class="site-content container clearfix" id="content">
+                        <div class="post-content">
+                            <div class="post-text">
+                                {{ content }}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer class="site-footer clearfix" id="colophon">
+    <footer class="site-footer clearfix" id="colophon">
             <div class="site-footer-inside">
                 
 
@@ -165,7 +120,7 @@ a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .port
 
                     <div class="copyright">
                         <div class="site-info">
-                            © 2010-2014<a href=
+                            © 2010-2014 <a href=
                             "http://mcode.ca">Muhammad Osama</a>
                             <span class="sep">|</span> The source for this website may be found on <a href=
                             "https://github.com/mcoded/mcoded.github.com">Github</a>.
@@ -175,7 +130,6 @@ a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .port
             </div>
         </footer>
 
-        <div style="display:none"></div>
-    </div>
+    <div style="display:none"></div>
 </body>
 </html>
