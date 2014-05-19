@@ -1,0 +1,42 @@
+<div class="navigation-toggle">
+                                <nav class="site-navigation main-navigation">
+                                    <h1 class="assistive-text">Menu</h1>
+
+                                    <div class="assistive-text skip-link">
+                                        <a href="#content">Skip to content</a>
+                                    </div>
+
+                                    <div class="menu-header-container">
+                                        <ul class="menu" id="menu-header">
+                                            <li class=
+                                            "menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1475"
+                                            id="menu-item-1475">
+                                                <a href=
+                                                "/about/">About</a>
+
+                                            <li class=
+                                            "menu-item menu-item-type-post_type menu-item-object-page menu-item-1659"
+                                            id="menu-item-1659"><a href=
+                                            "/projects/">Projects</a></li>
+                                            
+                                            {% for post in site.categories.CAT %}
+                                              {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+                                            {% endfor %}
+                                            
+                                            {% if post_count > 0 %}
+                                            <li class=
+                                            "menu-item menu-item-type-post_type menu-item-object-page menu-item-1342"
+                                            id="menu-item-1342"><a href=
+                                            "/blog/">Blog</a></li>
+                                            {% endif %}
+
+                                            <li class=
+                                            "menu-item menu-item-type-post_type menu-item-object-page menu-item-1474"
+                                            id="menu-item-1474"><a href=
+                                            "mailto:muhammad.osama@mcode.ca">Contact Me</a> 
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
