@@ -11,6 +11,7 @@
     <link href="/assets/css/style.css" media='all' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
     <meta property="og:image" content="http://mcode.ca/assets/img/logo.svg" />
+    <meta name="description" content="Professional Portfolio of Muhammad Osama – Programmer and Web Developer, Studying Computer Science"/>
     <style type="text/css">
 a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .portfolio-nav a:hover, #respond
     .required{color:#33B26E}.cta-red, .site-title a:after, #searchsubmit, #commentform #submit, .contact-form input[type='submit'], #content input[type='submit'], .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover{background:#33B26E}.main-navigation ul li.current-menu-item > a, .main-navigation ul > li:hover > a, #content .edit-link a, #secondary .edit-link a, .post-content .more-link, .portfolio-column-text .more-link, .index-navigation a, #content .edit-link a:hover, #secondary .edit-link a:hover, .post-content .more-link:hover, .portfolio-column-text .more-link:hover, .post-meta a:hover{border-bottom-color:#33B26E}.site-header,.site-footer{background-color:#2C343C}.main-navigation a, .menu-search-toggle, .hero-title h3,.site-footer{color:#7D838B}
@@ -57,11 +58,17 @@ a, #cancel-comment-reply i, #secondary a:hover, .menu-toggle i, #secondary .port
                                             "menu-item menu-item-type-post_type menu-item-object-page menu-item-1659"
                                             id="menu-item-1659"><a href=
                                             "/projects/">Projects</a></li>
-
+                                            
+                                            {% for post in site.categories.CAT %}
+                                              {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+                                            {% endfor %}
+                                            
+                                            {% if post_count != 0 %}
                                             <li class=
                                             "menu-item menu-item-type-post_type menu-item-object-page menu-item-1342"
                                             id="menu-item-1342"><a href=
                                             "/blog/">Blog</a></li>
+                                            {% endif %}
 
                                             <li class=
                                             "menu-item menu-item-type-post_type menu-item-object-page menu-item-1474"
