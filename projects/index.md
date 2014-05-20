@@ -16,10 +16,12 @@ This page highlights some of the projects that I have shared online.
 
 ## <a name="web"></a>Websites  
 I love helping others bring themselves, their organizations, or their businesses, onto the web. The following list is of a few websites that I have helped in building and designing.  
-* [Canadian Youth About Politics](http://canyap.ca)  
-* [DigiSol International](http://digisol.ca)  
-* [Home at GTA](http://homeatgta.ca)  
-* [Victoria Park CI](http://victoriaparkci.ca)  
+
+
+* [Canadian Youth About Politics](http://canyap.ca)
+* [DigiSol International](http://digisol.ca)
+* [Home at GTA](http://homeatgta.ca)
+* [Victoria Park CI](http://victoriaparkci.ca)
 
 
 ## <a name="android"></a>Android Applications  
