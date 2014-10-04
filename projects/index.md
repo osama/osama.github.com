@@ -25,4 +25,7 @@ I love helping others bring themselves, their organizations, or their businesses
 
 
 ## <a name="android"></a>Android Applications  
-While I do not currently have any Android apps on the Play Store, I am developing some ideas that I plan on introducing to the market. The source for these will be shared on GitHub.
+While I do not currently have any apps on the Play Store, I am developing some ideas that I plan on introducing to the market. The source for these will be shared on GitHub.
+
+
+* **[NurseApp](https://github.com/mcoded/NurseApp)**: This was developed as a course project (in a group of 4) to aid with the hospital triaging process.
