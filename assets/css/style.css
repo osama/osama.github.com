@@ -4,9 +4,15 @@ body {
   margin-right: 24px;
 }
 
+header {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
 main {
   max-width: 620px;
   line-height: 28px;
+  margin: 0 auto;
 }
 
 h1 {
